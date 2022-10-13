@@ -7,9 +7,9 @@
     "node": "16.x"
   },
   "scripts": {
+    "build": "NODE_ENV=production webpack",
     "start": "cross-env NODE_ENV=production node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production webpack",
     "dev": "concurrently \"cross-env NODE_ENV=development webpack-dev-server --open\" \"nodemon ./server/server.js\""
   },
   "nodemonConfig": {

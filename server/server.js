@@ -5,7 +5,7 @@ const app = express();
 
 const apiRouter = require('./routes/api');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //handle parsing request body
 app.use(express.json());
