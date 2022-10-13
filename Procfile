@@ -1,1 +1,1 @@
-web: cross-env NODE_ENV=production webpack node server/server.js
+web: node server/server.js
